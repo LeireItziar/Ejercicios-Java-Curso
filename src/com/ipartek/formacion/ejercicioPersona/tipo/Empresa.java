@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Empresa {
-	// declarar variables nombre empresa y diirector
+	// declarar variables nombre empresa y director
 	private String nombre;
 	private Persona director; // Cogemos Persona del package tipos, ya teniamos una definicion de persona
 	private Persona[] junta = new Persona[5]; // creamos un array de Persona (puntero)
@@ -32,5 +32,16 @@ public class Empresa {
 	}
 
 	//AL AÑADIR TO STRING CON TODOS LOS CAMPOS VARIA, METE TODOS LOS CAMPOS
+	public void setPersonaJunta(Persona persona, int posicion) {
+		junta[posicion] = persona;
+	}
+
+	public Persona getPersonaJunta(int posicion) {
+		return junta[posicion];
+	}
+
+	public void addPersona(Persona persona) {
+		personas.add(persona);
+	}
 
 }
